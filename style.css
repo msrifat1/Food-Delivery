@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.margin{
+    width: 90%;
+    margin: auto;
+}
+.dod{
+    display: none;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu ul{
+    display: flex;
+    list-style: none;
+    gap: 70px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: #252B42;
+    transition: .6s;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+}
+.menu ul li a:hover{
+    color: #FA4A0C;
+}
+.menu ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translate(-50%);
+    background: #FA4A0C;
+    transition: width 0.3s;
+}
+.banner1 {
+    background-image: url(image/banar\ 1\ bg.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 90vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner1-text{
+    text-align: center;
+    margin-top: 90px;
+}
+.banner1-text h4{
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+.banner1-text h1{
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+    width: 800px;
+    margin: 20px auto;
+    color: white;
+}
+.banner1-text p{
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+.btn{
+    text-align: center;
+    margin-top: 30px;
+}
+.btn-playstore{
+    padding: 10px 40px;
+    border-radius: 20px;
+    border: 1px solid #FA4A0C;
+    background:#FA4A0C;
+    color: white;
+    transition: .6s;
+    margin-right: 20px;
+}
+.btn-appstore{
+    padding: 10px 40px;
+    border-radius: 20px;
+    color: white;
+    border: 1px solid white;
+    background: transparent;
+    transition: .6s;
+}
+
+.btn-playstore:hover{
+    border: 1px solid white;
+    background: transparent;
+}
+.btn-appstore:hover{
+    background:#FA4A0C;
+    border: 1px solid #FA4A0C;
+}
+
+.menu ul li a:hover::after{
+    width: 80%;
+}
+.mobile-img {
+    text-align: center;
+}
+
+.hr{
+    width: 80%;
+    height: 3px;
+    background-color: #E4E4E4;
+    margin: 50px auto;
+
+}
+.work-text{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+.account{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+.account-left img{
+    text-align: center;
+}
+.account-right{
+    font-family: 'Montserrat', sans-serif;
+}
+.account-right h3{
+    color: #FA4A0C;
+    font-size: 18px;
+}
+.account-right h1{
+    font-weight: bold;
+    font-size: 24px;
+    margin: 10px 0px;
+}
+.account-right p{
+    color: #737373;
+    font-weight: 500;
+    font-size: 18px;
+}
+.res{
+    display: none;
+}
+footer {
+    background-image: url(image/footer\ bg.png);
+    width: 100%;
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+}
+.download{
+    text-align: center;
+}
+.download h1{
+    font-weight: bold;
+    font-size: 28px;
+    font-family: 'Montserrat', sans-serif;
+    color: #FFFFFF;
+}
+.download p{
+    color: #FFFFFF;
+    margin: 20px auto;
+    font-family: 'Montserrat', sans-serif;
+}
+.footer-last{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px auto;
+}
+.social{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+@media only screen and (max-width: 786px){
+    .dod{
+        display: block;
+    }
+    .menu{
+        display: none;
+    }
+    .banner1{
+        background-image: none;
+        height: 50vh;
+    }
+    .banner1-text{
+        
+    }
+    .banner1-text h4{
+        color: #737373;
+    }
+    .banner1-text h1 {
+        color: black;
+        width: 80%;
+        margin: auto;
+        font-size: 30px;
+    }
+    .banner1-text p{
+        color: #737373;
+    }
+    .btn{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .btn-playstore{
+        padding: 20px 60px;
+        margin: auto;
+        font-size: 24px;
+    }
+    .btn-playstore:hover{
+        color: black;
+        border: 1px solid black;
+    }
+    .btn-appstore{
+        padding: 20px 60px;
+        margin: auto;
+        font-size: 24px;
+        border-radius: 20px;
+        color: #FA4A0C;
+        border: 1px solid #FA4A0C;
+        background: transparent;
+        transition: .6s;
+    }
+    .btn-appstore:hover{
+        color: white;
+    }
+    .mobile-img img{
+        text-align: center;
+        width: ;
+        height: auto;
+        margin-top: 150px;
+    }
+    .account{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    .account-right{
+        width: 60%;
+        margin: auto;
+    }
+    .account-right h3{
+        font-size: 40px;
+    }
+    .account-right h1{
+        font-weight: bold;
+        font-size: 40px;
+    }
+    .res{
+        display: block;
+    }
+    .res2{
+        display: none;
+    }
+    footer{
+        background-image: none;
+        background-color: #252B42;
+        height: 40vh;
+        width: 100%;
+        margin: auto;
+    }
+    .logo-last{
+        display: none;
+    }
+    .footer-last{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+}
